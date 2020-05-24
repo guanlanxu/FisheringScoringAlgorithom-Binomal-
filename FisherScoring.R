@@ -1,6 +1,6 @@
 #---------------------------------------------------------------#
 # Fisher scoring iteration with Wald, Likelihood ratio test,   #
-# & deviance statistics & person Chi-square test                #
+# & deviance statistics & pearson Chi-square test                #
 #---------------------------------------------------------------#
 
 
@@ -145,7 +145,7 @@ GOF
 
 
 #################################
-#  Person Chi-Square Test        #
+#  Pearson Chi-Square Test        #
 #################################
 var.est <- mu.mle*(1-mu.mle)/5
 chi2 <- sum((y-mu.mle)^2/var.est)
